@@ -7,7 +7,7 @@ using LfMerge.Core.Logging;
 using LfMerge.Core.MongoConnector;
 using LfMerge.Core.LanguageForge.Model;
 using Newtonsoft.Json;
-using Palaso.Progress;
+using SIL.Progress;
 
 namespace LfMerge.Core.DataConverters
 {
@@ -52,7 +52,7 @@ namespace LfMerge.Core.DataConverters
 		private bool CallLfMergeBridge(string bridgeInput, out string bridgeOutput)
 		{
 			bridgeOutput = string.Empty;
-			using (var tmpFile = new Palaso.IO.TempFile(bridgeInput))
+			using (var tmpFile = new SIL.IO.TempFile(bridgeInput))
 			{
 				var options = new Dictionary<string, string>
 				{
