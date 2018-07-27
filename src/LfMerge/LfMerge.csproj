@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>LfMerge</RootNamespace>
     <AssemblyName>LfMerge</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <DefinePlatformConstants Condition="'$(OS)'!='Windows_NT'">LINUX</DefinePlatformConstants>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -76,15 +76,20 @@
       <HintPath>..\..\packages\Bugsnag.2.2.0\lib\net45\Bugsnag.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="INIFileParser, Version=2.5.2.0, Culture=neutral, PublicKeyToken=79af7b307b65cf3c">
+      <HintPath>..\..\packages\ini-parser.2.5.2\lib\net20\INIFileParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="CommandLine">
       <HintPath>..\..\packages\CommandLineParser.1.9.71\lib\net45\CommandLine.dll</HintPath>
     </Reference>
     <Reference Include="Autofac">
       <HintPath>..\..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Bson">
       <HintPath>..\..\packages\MongoDB.Bson.2.2.1\lib\net45\MongoDB.Bson.dll</HintPath>
@@ -98,9 +103,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml" />
-    <Reference Include="INIFileParser">
-      <HintPath>..\..\packages\ini-parser.2.2.4\lib\net20\INIFileParser.dll</HintPath>
-    </Reference>
     <Reference Include="SIL.Linux.Logging" Condition="'$(OS)'!='Windows_NT'">
       <HintPath>..\..\lib\SIL.Linux.Logging.dll</HintPath>
     </Reference>
